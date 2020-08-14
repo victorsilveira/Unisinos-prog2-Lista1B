@@ -37,4 +37,5 @@ public class AlunoPosGrad extends Aluno{
         System.out.println("A matricula nº " + matricula + " foi matriculado com sucesso no curso de " + nomeCurso + " da universidade " + nomeUniversidade + ", nesse semestre você fará " + qtdCadeiras + " cadeira(s) " + " Boa sorte!!!");
 
     }
+
 }

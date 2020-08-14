@@ -49,4 +49,8 @@ public class Aluno {
     public void defineMatricula(int matricula, int qtdCadeiras){
         System.out.println("A matricula nº " + matricula + " foi matriculado com sucesso, nesse semestre você fará " + qtdCadeiras + " cadeira(s) " + " Boa sorte!!!");
     }
+
+    public void diaDeAula(){
+        System.out.println("Você tem aula HOJE!");
+    }
 }
