@@ -1,5 +1,10 @@
 package Lista1BDeExercicios;
+//QUESTAO 3
+/*
+Herança é um dos principais conceitos de polimorfismo, pois permite que uma subclasse herde atributos e métodos de uma superclasse.
+Facilitando assim a modelagem do software.
 
+ */
 public class AlunoPosGrad extends Aluno{
 
     private String nomeCurso;
