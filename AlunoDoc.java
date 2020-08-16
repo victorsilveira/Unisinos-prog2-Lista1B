@@ -26,16 +26,21 @@ public class AlunoDoc extends Aluno{
         this.nomeOrientador = nomeOrientador;
     }
 
-    //QUESTÃO 2
+    //QUESTAO 2
     /*
-    A sobreescrita está explicita no método abaixo.
+    A sobreescrita esta explicita no metodo abaixo.
     Ela pode ser identificado pelo Annotation @Override que o java fornece.
-    Ela é importante para aproveitar um método que no escopo vai ser exatamente igual da superclasse. Para implementar,
-    o método deve ser exatamente igual (nome e parâmetros)
+    Ela e importante para aproveitar um m�todo que no escopo vai ser exatamente igual da superclasse. Para implementar,
+    o metodo deve ser exatamente igual (nome e parametros)
      */
     @Override
     public void diaDeAula() {
         super.diaDeAula();
+    }
+    
+    @Override
+    public void exibeDados() {
+    	System.out.println("Nome: " + nome + "\nIdade: " + idade + "\nMatr�cula: " + matricula + "\nCadeiras: " + qtdCadeiras + "\nArea Doc:" + areaDoc + "\nOrientador: " + nomeOrientador);
     }
 
 

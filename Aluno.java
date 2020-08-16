@@ -1,6 +1,6 @@
 package Lista1BDeExercicios;
 
-public class Aluno {
+public class Aluno extends Pessoa{
 
     private String nome;
     private int idade;
@@ -53,4 +53,10 @@ public class Aluno {
     public void diaDeAula(){
         System.out.println("VocÃª tem aula HOJE!");
     }
+    
+    public void exibeDados() {
+    	System.out.println("Nome: " + nome + "\nIdade: " + idade + "\nMatrícula: " + matricula + "\nCadeiras: " + qtdCadeiras);
+    }
+    
+    
 }

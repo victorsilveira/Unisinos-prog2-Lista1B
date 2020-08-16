@@ -1,11 +1,11 @@
 package Lista1BDeExercicios;
 //QUESTAO 3
 /*
-Herança é um dos principais conceitos de polimorfismo, pois permite que uma subclasse herde atributos e métodos de uma superclasse.
+Heran�a e um dos principais conceitos de polimorfismo, pois permite que uma subclasse herde atributos e metodos de uma superclasse.
 Facilitando assim a modelagem do software.
 
  */
-public class AlunoPosGrad extends Aluno{
+public class AlunoPosGrad extends Aluno implements HappyHour{
 
     private String nomeCurso;
     private String nomeUniversidade;
@@ -32,15 +32,30 @@ public class AlunoPosGrad extends Aluno{
         this.nomeUniversidade = nomeUniversidade;
     }
 
-    //QUESTÃO 1
+    //QUESTAO 1
     /*
-    A sobrecarga está explicita nesse método, pois o metodo defineMatricula está presente na superclasse, porém na subclasse está sendo sobrecarregado.
-    Visto que o nome é o mesmo porém a quantidade de parâmetros e tipos são diferentes.
-    A sobrecarga é util pois podemos reaproveitar os nomes de métodos
+    A sobrecarga esta explicita nesse metodo, pois o metodo define Matricula esta presente na superclasse, porem na subclasse est� sendo sobrecarregado.
+    Visto que o nome e o mesmo porem a quantidade de parametros e tipos sao diferentes.
+    A sobrecarga e util pois podemos reaproveitar os nomes de metodos
      */
     public void defineMatricula(int matricula,int qtdCadeiras,String nomeCurso,String nomeUniversidade){
         System.out.println("A matricula nº " + matricula + " foi matriculado com sucesso no curso de " + nomeCurso + " da universidade " + nomeUniversidade + ", nesse semestre você fará " + qtdCadeiras + " cadeira(s) " + " Boa sorte!!!");
 
+    }
+    
+    public void tomarCervejaNoAlemao(int qtdCervejas) {
+    	System.out.println("Foi comsumido um total de: " + qtdCervejas + " cerveja(s)");
+    }
+    
+    /*
+     QUESTAO 8:
+     Poliformismo se da como a variacao de implementacao de um metodo em diferentes classes, ocorrendo em casos onde ha heranca entre
+     classes. Pode ser vista no exemplo abaixo onde o metodo exibeDados herdado da classe pai tem uma implementacao diferente na classe filha
+     */
+    
+    @Override
+    public void exibeDados() {
+    	System.out.println("Nome: " + nome + "\nIdade: " + idade + "\nMatr�cula: " + matricula + "\nCadeiras: " + qtdCadeiras + "\nCurso:" + nomeCurso + "\nUniversidade: " + nomeUniversidade);
     }
 
 }
